@@ -205,45 +205,6 @@ def experts(request, pk):
     }
     return render(request, 'pred/expert-predict.html', context)
 
-    Experts = [
-    {
-    'id': '1',
-    'name': 'Harrison',
-    'bio': 'graduate of Unilag, Studied',
-    'ig': '@harrion',
-    'twitter': '@harrison',
-    'image': "{% static 'images/profiles/profile.png' %}"
-},
-{
-    'id': '2',
-    'name': 'Olaolu',
-    'bio': 'A soccer enthisiast, who has been into soccer prediction for 10years with incredible success rate',
-    'ig': '@olaolu',
-    'twitter': '@olaolu',
-    'image': "{% static 'images/profiles/profile.png' %}"   
-}]
-
-def expertsdays(request, pk):
-    expert = Prediction.objects.filter(expertsRef='Olaolu')
-    expert2 = Prediction.objects.filter(expertsRef='Harrison')
-    
-    predict = None
-    for i in expert:
-        if i['date'] == pk:
-            predict = i
-
-    predict = None
-    for i in expert2:
-        if i['date'] == pk:
-            predict = i
-    
-    context = {
-        'predict' : predict,
-        'Today' : Today,
-        'Yesterday' : Yesterday,
-        'Tomorrow' : Tomorrow
-        }
-    return render(request, 'pred/tennisdays.html', context)
 
 
 
