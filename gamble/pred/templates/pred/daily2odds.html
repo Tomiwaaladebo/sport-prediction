@@ -1,0 +1,81 @@
+{% extends "base.html" %} {% block title %}
+<title>Daily 2Odds</title>
+{% endblock %} {% block content %}
+
+<div class="row" style="padding-left: 50px">
+  <h3>Today {{ Today }}</h3>
+
+  <div class="">
+    <div class="card">
+      <div class="">
+        <p>{{ odds }} Odds</p>
+      </div>
+      <table class="">
+        <tbody>
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+          {% for tip in predict %}
+          <tr>
+            <td>{{ tip.date }}</td>
+            <td>{{ tip.league }}</td>
+            <td>{{ tip.tip }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <a href="#" class="book">Book</a>
+    </div>
+  </div>
+  <div class="">
+    <div class="card">
+      <div class="">
+        <p>{{ odds2 }} Odds</p>
+      </div>
+      <table class="">
+        <tbody>
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+          {% for tip in predict1 %}
+          <tr>
+            <td>{{ tip.date }}</td>
+            <td>{{ tip.league }}</td>
+            <td>{{ tip.tip }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <a href="#" class="book">Book</a>
+    </div>
+  </div>
+  <div class="">
+    <div class="card">
+      <div class="">
+        <p>{{ odds3 }} Odds</p>
+      </div>
+      <table class="">
+        <tbody>
+          <tr>
+            <th>Company</th>
+            <th>Contact</th>
+            <th>Country</th>
+          </tr>
+          {% for tip in predict3 %}
+          <tr>
+            <td>{{ tip.date }}</td>
+            <td>{{ tip.league }}</td>
+            <td>{{ tip.tip }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+      <a href="#" class="book">Book</a>
+    </div>
+  </div>
+</div>
+{% endblock %}

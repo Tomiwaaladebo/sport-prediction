@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<h1>Tipsters</h1>
+
+{% for expert in experts %}
+<div>
+  <img
+    src="{% static 'images/profiles/profile.png' %}"
+    alt=""
+    sizes=""
+    srcset=""
+  />
+  <br />
+  Name: {{ expert.name }} <br />
+  <a href="{% url 'profile' expert.id %}"><button>About me</button></a>
+  <a href="{% url 'experts' expert.name %}"><button>Predictions</button></a>
+</div>
+
+{% endfor %} {% endblock %}

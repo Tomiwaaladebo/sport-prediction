@@ -1,0 +1,27 @@
+{% extends "base.html" %} {% block title %}
+<title>Under/Over</title>
+{% endblock %} {% block content %}
+<div class="">
+  <a class="" href="{% url 'overdays' Yesterday %}">{{ Yesterday }}</a>
+  <a class="" href="{% url 'over' %}">{{ Today }}</a>
+  <a class="" href="{% url 'overdays' Tomorrow %}">{{ Tomorrow }}</a>
+</div>
+<table>
+  <tr>
+    <th>Time</th>
+    <th>League</th>
+    <th></th>
+    <th>Tip</th>
+    <th>Result</th>
+  </tr>
+  {% for tip in predict %}
+  <tr>
+    <td>{{ tip.time }}</td>
+    <td>{{ tip.league }}</td>
+    <td>{{ tip.teamA }} - {{ tip.teamB }}</td>
+    <td>{{ tip.tip }}</td>
+    <td>{{ tip.outcome }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}

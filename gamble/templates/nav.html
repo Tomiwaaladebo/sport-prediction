@@ -1,0 +1,27 @@
+{% load static %}
+
+<nav class="nav" style="font-weight: bold">
+  <div class="logo">
+    <a href="{% url 'home' %}"
+      ><img
+        src="{% static 'images/logo.jpg' %}"
+        alt=""
+        sizes=""
+        srcset=""
+        width="50"
+        height="50"
+    /></a>
+  </div>
+  <div class="menu">
+    <a class="" href="{% url 'home' %}">Home</a>
+    <a class="" href="{% url 'allpredictions' %}">Todays tips</a>
+    <a class="" href="{% url 'topten' %}">Top 10</a>
+    <a class="" href="{% url 'over' %}">Under/Over</a>
+    <a class="" href="{% url 'profiles' %}">Expert Tips</a>
+    <a class="" href="{% url 'daily2odds' %}">Daily 2ODDS</a>
+    <a class="" href="{% url 'tennis' %}">Tennis Prediction</a>
+    <a class="" href="{% url 'contactus' %}">Contact Us</a>
+    <a href=""><button>Register</button></a>
+    <a href=""><button>Login</button></a>
+  </div>
+</nav>

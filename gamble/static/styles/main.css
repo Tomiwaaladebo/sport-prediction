@@ -1,0 +1,140 @@
+.logo img{
+    margin: 0px 50px 0px 50px;
+    border-radius: 50px;
+}
+.nav{
+    background-color: #101010;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    margin-top: -8px;
+}
+
+.menu a{
+    margin: 0px 40px 0px 40px;
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background-color: #101010;;
+    color: white;
+    margin: 0;
+    padding-bottom: 3rem;
+}
+.text-muted{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    margin: 0px 250px 0px 250px;
+    border: 50px;
+}
+.landing_page{
+    display: flex;
+    margin-top: 30px;
+}
+
+.foot{
+    justify-content: center;
+    display: flex;
+}
+
+.mainpage{
+    width: 75%;
+}
+
+.sidebar{
+    width: 25%;
+    margin-left: 0.5rem;
+    justify-content: center;
+}
+
+.homepage img{
+    width: 100%;
+}
+
+.footer{
+    margin: 0px 20px 0px 20px;
+    width: 250px;
+}
+ul{
+    list-style-type: none;
+}
+
+li{
+    margin-top: 15px;
+}
+
+.advert{
+    position: fixed;
+    border: 2px #12d90b solid;
+    width: 15%;
+    border-radius: 20px;
+    padding: 20px 15px;
+    margin-bottom: 14px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.sidebaelogo{
+    background-color: #000000;
+    width: 75px;
+    height: 75px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #000;
+    overflow: hidden;
+    padding: 7px;
+     margin: 0 auto 10px;
+}
+
+.sidebardesc{
+    font-size: 24px;
+    font-weight: 800;
+    color: #1b9d11;
+    margin-bottom: 7px;
+    text-align: center;
+}
+
+.sidebardesclink{
+    width: 100%;
+    padding: 7px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase; 
+    background-color: #1b9d11;
+    border-radius: 5px;
+    border: 1px solid #1b9d11;
+    color: #fff;
+}
+
+.sidebaelogo img{
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+.card{
+    height: auto;
+    border-radius: 50px;
+    color: white;
+    background-color: #838f95;
+    border-color: white;
+    border-style: solid;
+    width: 25rem;
+}
+
+.book{
+    border-radius: 50px;
+    border-color: white solid;
+    background-color: #838f95;
+    display: block;
+    text-align: center;
+}
+body{
+    size: 100%;
+}

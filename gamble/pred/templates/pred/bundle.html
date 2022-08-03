@@ -1,0 +1,53 @@
+{% extends "base.html" %} {% load static %} {% block title %}
+<title>Home</title>
+{% endblock %} {% block content %}
+<div class="homepage">
+  <img src="{% static 'images/Money.jpg' %}" alt="" />
+  <h4>
+    <marquee>
+      KENYA MPESA PAYMENT IS NOW AVAILABLE || MTN MOBILE MONEY FOR UGANDA IS NOW
+      AVAILABLE || VODACOM MPESA PAYMENT FOR TANZANIA IS NOW AVAILABLE ||
+      Subscribe To Our Winning Plans to Get Top Notch Predictions || MAKE GREAT
+      EARNINGS WITH OUR EVERGREEN SOCCER PREDICTIONS ||
+    </marquee>
+  </h4>
+</div>
+<br />
+<div class="container">
+  <div>
+    All the latest FREE betting tips for today, tomorrow and the weekend posted
+    by sports experts. BetLive offers you a fantastic range of sports betting
+    tips, odds comparison, and betting predictions for football, basketball, and
+    other sports. Fully independent & unbiased. You will also find helpful
+    articles and review for sports betting, available mobile applications,
+    special bonuses and promotions and much more.
+  </div>
+  <br />
+  <h2 style="text-align: center">Bundle Tips</h2>
+  <br /><br />
+
+  <h5 style="text-align: center">Tips for today {{ dates }}.</h5>
+  <br /><br />
+  <div class="row" style="padding-left: 50px">
+    <div class="">
+      <div class="card">
+        <div class="">
+          <p>{{ odds}} Odds</p>
+        </div>
+        <table class="">
+          <tbody>
+            {% for tip in bundle %}
+            <tr>
+              <td>{{ tip.league }}</td>
+              <td>{{ tip.teamA }} vs {{ tip.teamB }}</td>
+              <td>{{ tip.tip }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+        <a href="#" class="book">Book</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
